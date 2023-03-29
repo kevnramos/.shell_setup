@@ -5,4 +5,4 @@ fi
 cd ~
 
 cp -s ~/.shell_setup/mac/.* .
-cp -s ~/.shell_setup/mac/p10k_styles/.* .
+ln -s ~/.shell_setup/mac/p10k_styles
