@@ -97,10 +97,10 @@ fi
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 
-PROMPT_P10K=".p10k.zsh"
-# PROMPT_P10K=".p10k_cool_no_logo_boneless.zsh"
-# PROMPT_P10K=".p10k_cool_no_logo.zsh"
-# PROMPT_P10K=".p10k_plain_.zsh"
+PROMPT_P10K="p10k_styles/.p10k.zsh"
+# PROMPT_P10K="p10k_styles/.p10k_cool_no_logo_boneless.zsh"
+# PROMPT_P10K="p10k_styles/.p10k_cool_no_logo.zsh"
+# PROMPT_P10K="p10k_styles/.p10k_plain_.zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/$PROMPT_P10K ]] || source ~/$PROMPT_P10K
