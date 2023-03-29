@@ -1,4 +1,6 @@
-rm `find . -name .DS_Store`
+if [ `find . -name .DS_Store` ]; then
+    rm `find . -name .DS_Store`
+fi
 
 cd ubuntu
 # delete ".*" files in ~ with same name as files in mac/ folder
@@ -13,4 +15,4 @@ cd ~
 
 cp -s ~/.shell_setup/common/.* .
 cp -s ~/.shell_setup/ubuntu/.* .
-source ~/.zshrc
+
