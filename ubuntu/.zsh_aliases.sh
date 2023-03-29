@@ -10,6 +10,7 @@ alias src="source ~/.zshrc"
 alias nghost="ng serve --host 0.0.0.0" # For Angular Server
 alias pro="php -S 0.0.0.0:3000 -t ."
 alias ports="sudo lsof -i -P -n | grep LISTEN"
+alias size="du -s --si"
 
 alias gs="git status"
 alias gb="git branch"

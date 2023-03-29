@@ -44,3 +44,5 @@ alias sd='cd ~/Documents/Documents/UNI\ Classes/8th-Semester && op'
 
 alias zion="cd ~/Documents/VS-Code/Zion-Academy-Of-Life"
 alias nghost="ng serve --host 0.0.0.0"
+alias ports="sudo lsof -i -P -n | grep LISTEN"
+alias pro="php -S 0.0.0.0:3000 -t ."
