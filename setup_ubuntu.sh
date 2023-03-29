@@ -23,7 +23,7 @@ cd common
 # delete ".*" files in ~ with same name as files in common/ folder
 delete
 
-echo "Removed files and symlinked new ones...\n"
+echo "Removed files and symlinked new ones..."
 
 cd ~
 
