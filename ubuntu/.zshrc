@@ -53,34 +53,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias ls="ls -F --color -I 'Icon'$'\r'"
-alias l="ls"
-alias ll="ls -l"
-alias la="ls -a"
-# show hidden files
-alias l.='ls -d1 .*'
-
-alias c=clear
-alias src="source ~/.zshrc"
-alias nghost="ng serve --host 0.0.0.0" # For Angular Server
-alias pro="php -S 0.0.0.0:3000 -t ."
-alias front="cd ~/Documents/490-Project/frontend && nghost"
-alias back="cd ~/Documents/490-Project/rabbitClient && pro"
-
-alias gs="git status"
-alias gb="git branch"
-alias gl="git log"
-
-alias make-server="sudo systemctl set-default multi-user.target && init 6"
-alias make-desktop="sudo systemctl set-default graphical.target && init 6"
-
-alias software-update="sudo apt update && sudo apt upgrade"
-
-alias fb="~/./setup.sh"
-
-alias rmq="sudo ~/./makermq.sh"
-alias ports="sudo lsof -i -P -n | grep LISTEN"
-alias fclear="sudo lsof -t -i tcp:4200 | xargs kill -9 && sudo lsof -t -i tcp:3000 | xargs kill -9"
+if [ -f ~/.zsh_aliases.sh ]; then
+    . ~/.zsh_aliases.sh
+fi
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
