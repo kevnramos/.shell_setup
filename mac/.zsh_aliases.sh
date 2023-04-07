@@ -21,8 +21,8 @@ alias size="du -s --si"
 
 #ssh shortcut
 alias goafs="ssh -l kdr24 afsconnect2.njit.edu"
-alias gopi="ssh pi@192.168.1.241"
-alias gopi4="ssh pi4@192.168.1.200"
+alias gopi="ssh pi@raspberrypi"
+alias gopi4="ssh pi4@raspberrypi4"
 
 alias pp="/opt/homebrew/Cellar/pipes-sh/1.3.0/bin/pipes.sh"
 alias dubu="docker start myubuntu && docker exec -it myubuntu bash"
