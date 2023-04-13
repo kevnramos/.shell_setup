@@ -1,4 +1,4 @@
-alias ls="ls -F --color -I 'Icon'$'\r'"
+alias ls="ls -F --color"
 alias l="ls"
 alias ll="ls -l"
 alias la="ls -a"
