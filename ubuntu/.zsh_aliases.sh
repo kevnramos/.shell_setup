@@ -21,10 +21,9 @@ alias make-desktop="sudo systemctl set-default graphical.target && init 6"
 
 alias software-update="sudo apt update && sudo apt upgrade"
 
-
 ######## Project Specific IT490 ########
 alias front="cd ~/Documents/490-Project/frontend && nghost"
 alias back="cd ~/Documents/490-Project/rabbitClient && pro"
 alias fb="~/./setup.sh"
-alias rmq="sudo ~/./makermq.sh"
+alias rmq="sudo ~/Documents/490-Project/configs/./makermq.sh"
 alias fclear="sudo lsof -t -i tcp:4200 | xargs kill -9 && sudo lsof -t -i tcp:3000 | xargs kill -9"
