@@ -1,6 +1,3 @@
-if [ `find . -name .DS_Store` ]; then
-    rm `find . -name .DS_Store`
-fi
 
 function delete(){
     for file in .*; do
