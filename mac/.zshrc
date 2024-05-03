@@ -35,6 +35,7 @@ setopt PROMPT_SUBST
 # PROMPT+="%B%F{9}
 # ➜ %f%b";
 
+export ANDROID_HOME=/Users/kevin/Library/Android/sdk
 export RPROMPT='%F{yellow}%*%f'
 
  
@@ -53,6 +54,7 @@ PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 PATH="/opt/homebrew/opt/php-cs-fixer@2/bin:$PATH"
+PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 
 # case-insensitive matching only if there are no case-sensitive matches

@@ -18,6 +18,7 @@ alias cafe='caffeinate'
 alias bdt='brew deps --tree --installed'
 alias op='open .'
 alias size="du -s --si"
+alias allhistory="history 0"
 
 #ssh shortcut
 alias goafs="ssh -l kdr24 afsconnect2.njit.edu"
@@ -39,7 +40,7 @@ alias gcc=gcc-11
 alias g++=g++-11
 
 alias vs='cd ~/Documents/VS-Code'
-alias costco='cd ~/Documents/VS-Code/extra/costco && ./run.sh home_costco.txt && cat prices.txt'
+alias costco='cd ~/Documents/VS-Code/extra/costco && ./run.sh home_costco.txt'
 alias sd='cd ~/Documents/Documents/UNI\ Classes/8th-Semester && op'
 
 
