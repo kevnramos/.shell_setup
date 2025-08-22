@@ -48,11 +48,11 @@ PROMPT+="%B%F{9}
 ➜ %f%b";
 
 
+PATH="/opt/homebrew/opt/node@24/bin:$PATH"
 PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
 PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 PATH="/opt/homebrew/opt/php-cs-fixer@2/bin:$PATH"
 PATH="$ANDROID_HOME/platform-tools:$PATH"
 
@@ -87,6 +87,10 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 if [ -f ~/.zsh_aliases.sh ]; then
     . ~/.zsh_aliases.sh

@@ -33,6 +33,17 @@ alias gs="git status"
 alias gb="git branch"
 alias gl="git log"
 alias gf="git fetch"
+alias gp="git pull --rebase"
+alias gch="git checkout"
+alias gitcommit="git commit -m"
+alias gitamend="gitcommit --amend"
+alias gitnoeditamend="gitamend --no-edit"
+alias gitpush="git push origin $(git branch --show-current)"
+
+alias cdd="cd .."
+alias cddd="cd ../../"
+alias cdddd="cd ../../../"
+
 
 alias py=python3
 alias py2=python2
@@ -48,3 +59,5 @@ alias zion="cd ~/Documents/VS-Code/Zion-Academy-Of-Life"
 alias nghost="ng serve --host 0.0.0.0"
 alias ports="lsof -i -P -n | grep LISTEN"
 alias pro="php -S 0.0.0.0:3000 -t ."
+
+alias lrfconvert="bash ~/convert_lrf_to_mp4.sh"
