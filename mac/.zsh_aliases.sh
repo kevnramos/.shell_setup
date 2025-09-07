@@ -36,9 +36,9 @@ alias gf="git fetch"
 alias gp="git pull --rebase"
 alias gch="git checkout"
 alias gitcommit="git commit -m"
-alias gitamend="gitcommit --amend"
+alias gitamend="git commit --amend"
 alias gitnoeditamend="gitamend --no-edit"
-alias gitpush="git push origin $(git branch --show-current)"
+alias gitpush='git push origin $(git branch --show-current)'
 
 alias cdd="cd .."
 alias cddd="cd ../../"
