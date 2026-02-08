@@ -120,3 +120,4 @@ PROMPT_P10K="p10k_styles/.p10k.zsh"
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
+export PATH="$HOME/.local/bin:$PATH"
